@@ -1,0 +1,121 @@
+@keyframes showText {
+    0%{
+        width:0;
+        opacity: 0;
+        color:white;
+    }
+    100%{
+        width:350px;
+        opacity:1;
+        color:black;
+    }
+    
+}
+@keyframes bgColor {
+    0%{
+        background-color: whitesmoke;
+
+    }
+    100%{
+        background-color: rgb(260, 206, 213);
+    }
+    
+}
+
+body{
+    font-family: Tahoma, sans-serif;
+    height:100vh;
+    animation:bgColor 2s steps(5) forwards;
+}
+.box{
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-top:20px;
+    width:70%;
+    text-align: center;  
+    height: 590px; 
+    background: rgb(252, 208, 208);
+}
+.maincontainer{
+    width:100%;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 5px;
+}
+
+.heading h1{
+    font-size:70px;
+    margin:100px 70px 10px 100px;
+    animation: showText 2s steps(10) forwards;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 30px;
+}
+.container div{
+    margin:8px;
+}
+.container label{
+    text-align: left;
+    font-size:15px;
+}
+.container input{
+    width:70%;
+    padding: 10px;
+    margin:auto;
+    border-radius:5px;
+}
+.container select{
+    width:70%;
+    padding: 10px;
+    margin:auto;
+    border-radius:5px;
+}
+
+
+#submitbutton{
+    text-decoration:none;
+    font-size:20px;
+    padding:10px 80px;
+    border:3px solid black;
+    border-radius:5px;
+    background-color:black;
+    color:white;
+}
+
+#submitbutton:hover{
+    color:black;
+    background-color: white;
+    border:3px solid white;
+}
+
+#ex{
+   margin-top:25px;
+}
+
+.other{
+    width:50%;
+    margin: auto ;
+    padding:7px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.other a{
+    text-decoration: none;
+    color:black;
+}
+
+.gicon{
+    font-size:20px;
+    background: linear-gradient(to bottom, red, green, yellow);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.ficon{
+    font-size:20px;
+    background: blue;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}

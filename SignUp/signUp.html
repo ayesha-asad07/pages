@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+        <script src="https://kit.fontawesome.com/6992b7d787.js" 
+        crossorigin="anonymous"></script>
+        <script src="script.js">
+        </script>
+    </head>
+    <body>
+        <div class="maincontainer">
+            <div class="heading">
+                <h1>Welcome to<br> the<br> Instagram App!</h1>
+            </div>
+            <div class="box">
+                <form name="signUp" onsubmit="return validateInput()">
+                    <h2>Create New Instagram Account</h2>
+                    <div class="container">
+                        <div>
+                            <label for="fname" >First Name</label><br> 
+                            <input type="text" name="fname" id="fname"><br>
+                            <p id="ferror" style="color:red; font-size:13px; display:inline;"></p>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name</label><br> 
+                            <input type="text" name="lname" id="lname"><br>
+                            <p id="lerror" style="color:red; font-size:13px; display:inline;"></p>
+                        </div>
+                        <div>
+                            <label for="bd">Birthday</label><br>
+                            <input type="date" name="bd" id="bd" ><br>
+                            <p id="bderror" style="color:red; font-size:13px; display:inline;"></p>
+
+                        </div>
+                        <div>
+                            <label for="gender">Gender</label><br>
+                            <select id="gender">
+                                <option value="" selected disabled>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="none">Prefer not to say</option>
+                            </select><br>
+                            <p id="gerror" style="color:red; font-size:13px; display:inline;"></p>
+
+                        </div>
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <p id="eerror" style="color:red; font-size:13px; display:inline;"></p>
+
+                        </div>
+                        <div>
+                            <label for="pwd">Password</label><br>
+                            <input type="password" id="pwd" name="pwd"><br>
+                            <p id="perror" style="color:red; font-size:13px; display:inline;"></p>
+
+                        </div>
+                    </div>
+                    <input type="submit" value="Sign Up" id="submitbutton"><br>
+                
+                </form> 
+                <p id="ex">Or</p>
+            
+                <div class="other">
+                    <i class="gicon fa-brands fa-google" style="font-color:"></i>
+                    <a  href="">Continue with Google</a>
+                </div>
+                <br>
+                <div class="other">
+                    <i class="ficon fa-brands fa-facebook"></i>
+                    <a href="">Continue with Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+
+</html>

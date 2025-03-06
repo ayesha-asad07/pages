@@ -1,0 +1,110 @@
+body{
+    font-family: Tahoma, sans-serif;
+    background: white;
+    animation: bgColor 2s steps(5) forwards;
+}
+.container{
+    width:100%;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 5px;
+}
+@keyframes showText {
+    0%{
+        width:0;
+        opacity: 0;
+        color:white;
+    }
+    100%{
+        width:350px;
+        opacity:1;
+        color:black;
+    }
+    
+}
+@keyframes bgColor {
+    0%{
+        background-color: whitesmoke;
+
+    }
+    100%{
+        background-color: rgb(260, 206, 213);
+    }
+    
+}
+.heading h1{
+    font-size:70px;
+    margin:150px 70px 150px 100px;
+    animation: showText 2s steps(10) forwards;
+}
+
+.box{
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-left:10px;
+
+    margin-top:60px;
+    width:80%;
+    text-align: center;  
+    height: 550px; 
+    background: rgb(247, 206, 213);
+    float:right;
+}
+.icon{
+    font-size:60px;
+    text-align:center;
+    padding:10px 280px;
+    background: linear-gradient(to bottom, rgb(226, 11, 226), rgb(192, 15, 103), yellow);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+label{
+    font-size:20px;
+}
+.input1{
+    width:50%;
+    padding: 10px;
+    margin-bottom:2px;
+    border-radius:5px;
+}
+.input2{
+    width:50%;
+    padding: 10px;
+    margin-bottom:2px;
+    border-radius:5px;
+}
+a.p1 {
+    display:block;
+    text-align:center;
+    margin-bottom:30px;
+    color: darkblue;
+}
+a.p1:hover{
+    color:black;
+}
+
+.button{
+    text-decoration:none;
+    font-size:20px;
+    padding:10px 80px;
+    border:3px solid black;
+    border-radius:5px;
+    background-color:black;
+    color:white;
+}
+.button:hover{
+    color: black;
+    background-color: white;
+    border:3px solid white;
+}
+
+.ex{
+   margin-top:25px;
+}
+
+.other{
+    width:50%;
+    margin: auto ;
+    border: 2px solid black;
+}
